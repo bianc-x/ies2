@@ -92,7 +92,7 @@
 
 /* Efeito ao passar o mouse sobre os itens do submenu */
 .dropdown-menu li a:hover {
-    background-color: #041936;
+    background-color: #a0541e;
 }
 
 /* HEADER */
@@ -177,7 +177,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(6, 51, 116, 0.4);  /* Cor com 40% de opacidade */
+    background-color: rgba(221, 123, 53, 0.142);  /* Cor com 40% de opacidade */
     z-index: 0;
 }
 
@@ -475,7 +475,7 @@ section {
 }
 
 .txt a:hover {
-    background-color: #041936;
+    background-color: #a0541e;
 }
 
 /* ESTILO  EVENTOS */
