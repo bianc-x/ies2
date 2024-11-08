@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+     <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <title>Instituto Empreendedorismo Socioambiental - IES</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+    <!-- Cabeçalho com o menu de navegação -->
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/White and Green Modern Agriculture Report Presentation.pdf.pdf (1).png" alt="Logo do Instituto Empreendedorismo Socioambiental">
+                </a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li class="dropdown">
+                            <a href="projetos.html">Projetos</a>
+                            <ul class="dropdown-menu">
+                                <!-- Seção projetos -->
+                                <li><a href="projetoaca.html">ACA</a></li>
+                                <!-- Seção Políticas -->
+                                <li><a href="#">Projeto ABC</a></li>
+                                <!-- Seção Fique por dentro -->
+                                <li><a href="#">Projeto DEF</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="doacoes.html">Doações</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main>
+        <h1>Doações</h1>
+        <p>Contribua para que o Instituto XYZ possa continuar realizando seus projetos. Sua doação é fundamental para que possamos transformar vidas e promover um impacto positivo na sociedade.</p>
+
+        <!-- Formulário de Doação -->
+        <section>
+            <h2>Faça uma Doação</h2>
+            <form action="processar_doacao.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="valor">Valor da Doação:</label>
+                <input type="number" id="valor" name="valor" min="10" required>
+
+                <button type="submit">Doar</button>
+            </form>
+        </section>
+
+        <!-- Informações sobre Dedução de Imposto de Renda -->
+        <section>
+            <h2>Dedução de Imposto de Renda</h2>
+            <p>Doações realizadas ao Instituto XYZ podem ser deduzidas do Imposto de Renda conforme a legislação brasileira. Pessoas físicas podem deduzir até 6% do IR devido e pessoas jurídicas até 2%, desde que sejam feitas até o último dia do ano.</p>
+            
+            <h3>Tabela de Dedução</h3>
+            <table>
+                <tr>
+                    <th>Tipo de Doação</th>
+                    <th>Percentual Máximo de Dedução</th>
+                    <th>Observações</th>
+                </tr>
+                <tr>
+                    <td>Pessoas Físicas</td>
+                    <td>Até 6% do IR devido</td>
+                    <td>Doações devem ser realizadas até 31 de dezembro.</td>
+                </tr>
+                <tr>
+                    <td>Pessoas Jurídicas</td>
+                    <td>Até 2% do lucro operacional</td>
+                    <td>Aplicável a empresas tributadas pelo lucro real.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteudo-rodape">
+            <div class="divendredes">
+                <div class="endereco-telefone">
+                    <p>Rua Exemplo, 123 - Bairro, Cidade</p>
+                    <p>Telefone: (21) 1234-5678</p>
+                </div>
+        
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+    
+            <div class="divlogoscopy">
+                <div class="logo-rodape">
+                    <a href="index.html">
+                        <img src="img/White and Green Modern Agriculture Report Presentation.pdf.pdf (1).png" alt="Logo do Instituto">
+                    </a>
+                </div>
+
+                <div class="copy">
+                    <p>&copy; 2024 Instituto Empreendedorismo Socioambiental – IES. Todos os direitos reservados.</p>
+                </div>
+        
+                <div class="logo-bianca">
+                    <a href="">
+                        <img src="img/logo.png" alt="Logo bianca">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+     

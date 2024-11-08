@@ -1,0 +1,679 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do botão Saiba Mais */
+.btn-saiba-mais1 {
+    display: inline-block;
+    background-color: #fff; /* Cor do botão */
+    color: #DD7C35;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px; /* Espaço entre o texto e o botão */
+    transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais1:hover {
+    background-color: #c5c7dd; /* Cor ao passar o mouse */
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    background-color: #DD7C35; /* Cor do botão */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px; /* Espaço entre o texto e o botão */
+    transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #DD7C35; /* Cor ao passar o mouse */
+}
+
+/* Estilo geral do menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Estilo para os links dos itens principais */
+.menu ul > li > a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: transparent;
+}
+
+/* Ocultar o submenu inicialmente */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #DD7C35;
+    z-index: 1000;
+    min-width: 100%; /* Garante que o submenu tenha a largura do item principal */
+}
+
+/* Mostrar o submenu ao passar o mouse sobre "Projetos" */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos dos links do submenu */
+.dropdown-menu li {
+    width: 100%; /* Garante que cada item do submenu ocupe toda a largura */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse sobre os itens do submenu */
+.dropdown-menu li a:hover {
+    background-color: #041936;
+}
+
+/* HEADER */
+header {
+    padding: 30px 4%;
+    background-color: #DD7C35; /* Cor de fundo do header */
+    position: sticky; /* Faz com que o header fique fixo */
+    top: 0; /* Fixa no topo da página */
+    z-index: 100; /* Garante que o menu fique acima de outros elementos */
+    padding: 20px 4%;
+  }
+  
+  /* Interface (para alinhar conteúdo) */
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Menu */
+  header nav ul {
+    list-style-type: none;
+    margin: 0; /* Remove qualquer margem padrão */
+    padding: 0; /* Remove qualquer padding */
+    display: flex;
+    justify-content: flex-end; 
+    gap: 40px; /* Espaçamento entre os itens do menu */
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav a {
+    color: #fff; /* Cor dos itens do menu */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Letras em negrito */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: color 0.3s; /* Transição suave para a cor */
+  }
+  
+  
+  header nav a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  /* Logo */
+  header .logo {
+    display: flex;
+    justify-content: flex-start; 
+  }
+  
+  header .logo img {
+    width: 120px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    object-fit: contain;
+  }
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%; /* Ocupa a largura inteira */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin-top: -90px; /* Sobe o banner em 40px */
+}
+  
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(6, 51, 116, 0.4);  /* Cor com 40% de opacidade */
+    z-index: 0;
+}
+
+/* Conteúdo do Banner */
+.banner-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1; /* Fica acima da camada de sobreposição */
+    padding: 100px 20px;
+    top: 60%; /* Ajusta a posição do conteúdo do banner */
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+  
+  /* Conteúdo do Banner */
+  .banner-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1; /* Fica acima da camada de sobreposição */
+    padding: 100px 20px;
+  }
+  
+  .banner h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .banner p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+ /* ESTILO DOE*/
+/* Ajustes na seção doe para o layout flex */
+section.aca {
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Ajuste de espaçamento entre o texto e a imagem */
+}
+
+/* Ajuste do texto e imagem */
+.ajudetxt {
+    flex: 1; /* Texto ocupa o espaço disponível */
+    margin-right: 30px;
+    
+}
+
+.ajudetxt h1 {
+    margin-bottom: 40px; /* Espaço entre o título e o parágrafo */
+    font-size: 30px;
+}
+
+.ajudetxt p {
+    margin-top: 35px; /* Espaço entre os parágrafos */
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.ajudeimg {
+    flex: 0.9; /* Ajusta a largura da imagem */
+    margin-left: auto; /* Move a imagem para a direita */
+
+}
+
+.aca img {
+    width: 100%; /* Ajusta para ocupar a largura definida pelo flex */
+    border-radius: 5px;
+    object-fit: cover; /* Ajusta a imagem para caber dentro do espaço */
+}
+
+section.doe {
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Ajuste de espaçamento entre o texto e a imagem */
+}
+
+/* Ajuste do texto e imagem */
+.ajudetxt {
+    flex: 1; /* Texto ocupa o espaço disponível */
+    margin-right: 30px;
+}
+
+.ajudetxt h1 {
+    margin-bottom: 40px; /* Espaço entre o título e o parágrafo */
+    font-size: 30px;
+}
+
+.ajudetxt p {
+    margin-top: 35px; /* Espaço entre os parágrafos */
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.ajudeimg {
+    flex: 0.9; /* Ajusta a largura da imagem */
+    margin-left: auto; /* Move a imagem para a direita */
+
+}
+
+.doe img {
+    width: 100%; /* Ajusta para ocupar a largura definida pelo flex */
+    border-radius: 5px;
+    object-fit: cover; /* Ajusta a imagem para caber dentro do espaço */
+}
+
+
+/* Estilo do botão de doação */
+.btn-doar {
+    display: inline-block;
+    background-color: #DD7C35; /* Cor do botão */
+    color: #fff; /* Cor do texto */
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px; /* Espaçamento acima do botão */
+    transition: background-color 0.3s ease;
+}
+
+.btn-doar:hover {
+    background-color: #a0541e; /* Cor ao passar o mouse */
+}
+
+/* Estilos para a seção "Nossa Missão" */
+section.missao {
+    background-color: #f1f1f1; /* Cor de fundo suave */
+    padding: 140px 10%; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    
+}
+
+/* Estilo para o título */
+section.missao h2 {
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    color: #DD7C35; /* Cor que combina com o tema de sustentabilidade */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+/* Estilo para o parágrafo */
+section.missao p {
+    font-size: 17px; /* Tamanho legível */
+    line-height: 1.8; /* Maior espaçamento entre linhas para leitura confortável */
+    max-width: 800px; /* Limite de largura para melhorar a legibilidade */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    margin-bottom: 35px
+}
+
+/* Seção Nossa Missão */
+.missao {
+    padding: 80px 4%;
+}
+
+.missao h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contêiner principal do conteúdo */
+.missao-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre a imagem e o texto */
+    gap: 30px;
+}
+
+/* Estilo para a imagem */
+.imgmissao {
+    flex: 1;
+}
+
+.imgmissao img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Estilo para o texto */
+.txtmissao {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.txtmissao p {
+    margin-bottom: 20px;
+}
+
+/* ESTILO PROJETOS */
+/* Estilo geral para as seções de projetos */
+section {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+/* Estilo da container para centralizar o conteúdo */
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para as imagens dos projetos */
+.img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o texto dos projetos */
+.txt {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.txt1 {
+    color: #fff;
+    flex: 1;
+    padding: 50px 20px;
+    border-radius: 8px;
+}
+
+.txt h2 {
+    font-size: 1.8rem;
+    color: #DD7C35;
+    margin-bottom: 20px;
+}
+
+.txt1 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.txt p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.txt1 p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.txt ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+.txt1 ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.txt li{
+    margin-bottom: 10px;
+}
+
+#projeto-abc {
+    background-color: #DD7C35; /* Azul escuro */
+}
+
+
+/* Botão "Saiba Mais" */
+.txt a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #DD7C35;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.txt a:hover {
+    background-color: #041936;
+}
+
+/* ESTILO  EVENTOS */
+#trekking {
+    background-color: #DD7C35; /* Azul escuro */
+}
+
+#rapelbalao .img img {
+    height: 60%; /* Diminui a altura da imagem para 50% */
+    width: auto; /* Mantém a proporção da largura */
+}
+
+#rapelbalao .img img {
+    height: 65vh; /* Define a altura da imagem como 50% da altura da viewport */
+    width: auto;  /* Mantém a proporção da largura */
+}
+
+/* ESTILO RAPEL BALAO */
+section.rapel-balao{
+    margin-bottom: 50px;
+}
+
+#rapel-balao .img img {
+    height: 60%; /* Diminui a altura da imagem para 50% */
+    width: auto; /* Mantém a proporção da largura */
+}
+
+#rapel-balao .img img {
+    height: 65vh; /* Define a altura da imagem como 50% da altura da viewport */
+    width: auto;  /* Mantém a proporção da largura */
+}
+
+section.detalhes {
+    background-color: #f1f1f1; /* Cor de fundo suave */
+    padding: 100px 10%; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto no centro */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Remover bolinhas e aumentar espaço entre as linhas */
+section.detalhes ul {
+    list-style-type: none;  /* Remove os marcadores (bolinhas) das listas */
+    padding-left: 0; /* Remove o padding da lista */
+}
+
+section.detalhes li {
+    margin-bottom: 15px; /* Aumenta o espaçamento entre as linhas */
+    line-height: 1.8; /* Aumenta o espaço entre as linhas do texto */
+}
+
+.detalhes h2, .detalhes h3, .detalhes h4, .detalhes h5, .detalhes h6 {
+    color: #DD7C35; /* Azul escuro */
+}
+
+/*ESTILO SOBRE */
+/* Estilo para a seção "Quem Somos" */
+#quem-somos {
+    padding: 80px 10%;
+    background-color: #f5f5f5; /* Cor de fundo suave */
+    text-align: center; /* Alinha o texto no centro */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+#quem-somos h2 {
+    font-size: 2.5rem;
+    color: #DD7C35;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#quem-somos p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/* Estilo para a seção "Missão, Visão e Valores" */
+#missao-visao-valores {
+    padding: 80px 10%;
+    background-color: #f1f1f1; /* Cor de fundo suave */
+    text-align: center; /* Alinha o texto no centro */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+#missao-visao-valores h2 {
+    font-size: 2.5rem;
+    color: #DD7C35;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#missao-visao-valores p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/* Estilo para os subtítulos dentro da seção Missão, Visão e Valores */
+#missao-visao-valores h2 + p {
+    margin-top: 20px;
+}
+
+/* Ajustes para o texto da seção */
+#missao-visao-valores p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+
+
+
+
+/* RODAPÉ */
+footer {
+    background-color: #DD7C35;
+    padding: 40px 7%;
+    color: #fff;
+}
+
+/* Contêiner principal do rodapé */
+footer .conteudo-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Primeira linha: endereço e redes sociais */
+footer .divendredes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para endereço e telefone (alinhado à direita) */
+footer .endereco-telefone {
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Ícones das redes sociais (alinhado à esquerda) */
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo dos ícones */
+footer .social-icon i {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+footer .social-icon i:hover {
+    transform: scale(1.2);
+}
+
+.copyaca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.copyaca img{
+    height: 40px;
+    width: auto;
+}
+
+/* Segunda linha: logos e copyright */
+footer .divlogoscopy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Logo do Instituto (alinhada à direita) */
+footer .logo-rodape img {
+    width: 90px;
+    height: auto;
+}
+
+/* Texto de copyright (centralizado) */
+footer .copy {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Logo da Bianca (alinhada à esquerda) */
+footer .logo-bianca img {
+    width: 100px;
+    height: auto;
+}
